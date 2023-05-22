@@ -14,7 +14,7 @@ type Props = {};
 const Screen2 = (props: Props) => {
   const navigation = useNavigation<NavigationProp>();
   return (
-    <SafeAreaView>
+    <SafeAreaView className="min-h-screen min-w-screen bg-[#90EE90]">
       <View>
         <Text>Screen2</Text>
         <TouchableOpacity onPress={() => navigation.goBack()}>
