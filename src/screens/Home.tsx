@@ -1,13 +1,22 @@
-import {View, Text} from 'react-native';
+import {SafeAreaView, View, Text} from 'react-native';
 import React from 'react';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {RootStackParamList} from '../../App';
+
+export type NavigationProp = NativeStackNavigationProp<
+  RootStackParamList,
+  'Home'
+>;
 
 type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView>
+      <View>
+        <Text>Home</Text>
+      </View>
+    </SafeAreaView>
   );
 };
 
